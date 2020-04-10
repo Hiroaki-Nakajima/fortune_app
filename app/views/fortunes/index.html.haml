@@ -1,0 +1,13 @@
+- @fortunes.each do |fortune|
+  %h1
+    = fortune.result
+    %span です。
+- @messages.each do |message|
+  %p
+    = message.content
+  %p
+    = message.author
+  %p
+    = message.description
+= link_to root_path do
+  %p トップページへ
